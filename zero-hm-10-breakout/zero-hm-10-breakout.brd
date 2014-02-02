@@ -129,6 +129,8 @@
 <wire x1="17.78" y1="34.29" x2="7.62" y2="34.29" width="0" layer="20"/>
 <wire x1="7.62" y1="34.29" x2="0" y2="27.94" width="0" layer="20"/>
 <wire x1="0" y1="27.93" x2="0" y2="0" width="0" layer="20"/>
+<text x="21.59" y="10.16" size="0.8128" layer="21" rot="R90">Micah Pearlman -- Zero Engineering</text>
+<text x="3.81" y="26.67" size="1.27" layer="21" rot="R270">HM-10 XBee Breakout</text>
 </plain>
 <libraries>
 <library name="HM-10_BLE">
