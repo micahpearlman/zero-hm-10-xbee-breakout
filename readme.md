@@ -12,15 +12,7 @@ Creative Commons Share and Share Alike
 
 ## Parts ##
 
-|Qty |Value    |Device                    |Package      |Parts          |Description            |PROD_ID   |VALUE
-|1   |0.1uF    |0.1UF-25V(+80/-20%)(0603) |0603-CAP     |C1             |CAP-00810              |CAP-00810 |0.1uF
-|4   |470R     |0.3OHM-1/8W-1%(0805)      |0805         |R1, R2, R3, R4 |                       |RES-11622 |0.3  
-|1   |BLU      |LEDCHIPLED_0805           |CHIPLED_0805 |PWR            |LED                    |          |     
-|1   |GRN      |LEDCHIPLED_0805           |CHIPLED_0805 |RXD            |LED                    |          |     
-|1   |HM-10    |HM-10                     |HM-10        |U1             |                       |          |     
-|1   |RED      |LEDCHIPLED_0805           |CHIPLED_0805 |TXD            |LED                    |          |     
-|1   |XBEE-1B1 |XBEE-1B1                  |XBEE-1       |U$1            |Xbee module footprints |          |     
-
+[Parts List](https://raw2.github.com/micahpearlman/zero-hm-10-xbee-breakout/master/parts-list.txt)
 
 ## References ##
 
