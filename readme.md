@@ -2,8 +2,9 @@
 
 This is an 3.3V XBee breakout of the HM-10 Bluetooth Low Energy Module.
 
+![what](https://github.com/micahpearlman/zero-hm-10-xbee-breakout/blob/master/schematic.png?raw=true "Schematic")
 ![alt text](https://github.com/micahpearlman/zero-hm-10-xbee-breakout/blob/master/board.png?raw=true "Board")
-![alt text](https://github.com/micahpearlman/zero-hm-10-xbee-breakout/blob/master/schematic.png?raw=true "Schematic")
+
 
 ## License ##
 
