@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2076,14 +2076,8 @@ Standard decoupling cap</description>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="breakout"/>
 <part name="U1" library="HM-10_BLE" deviceset="HM-10" device=""/>
 <part name="U$1" library="SparkFun-RF" deviceset="XBEE-1" device="B1"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="470R"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="470R"/>
-<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="470R"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="470R"/>
-<part name="RXD" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="GRN"/>
-<part name="TXD" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="RED"/>
 <part name="PWR" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="BLU"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
@@ -2099,14 +2093,8 @@ Standard decoupling cap</description>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
 <instance part="U1" gate="G$1" x="181.61" y="138.43"/>
 <instance part="U$1" gate="G$1" x="116.84" y="143.51"/>
-<instance part="R1" gate="G$1" x="96.52" y="175.26"/>
-<instance part="R2" gate="G$1" x="96.52" y="165.1"/>
-<instance part="GND1" gate="1" x="118.11" y="162.56"/>
-<instance part="GND2" gate="1" x="118.11" y="172.72"/>
 <instance part="R3" gate="G$1" x="218.44" y="135.89"/>
 <instance part="R4" gate="G$1" x="218.44" y="120.65"/>
-<instance part="RXD" gate="G$1" x="107.95" y="175.26" rot="R90"/>
-<instance part="TXD" gate="G$1" x="107.95" y="165.1" rot="R90"/>
 <instance part="PWR" gate="G$1" x="233.68" y="135.89" rot="R90"/>
 <instance part="GND3" gate="1" x="247.65" y="133.35"/>
 <instance part="C1" gate="G$1" x="147.32" y="113.03"/>
@@ -2146,18 +2134,6 @@ Standard decoupling cap</description>
 <junction x="191.77" y="113.03"/>
 <label x="191.77" y="109.22" size="1.778" layer="95"/>
 <junction x="191.77" y="109.22"/>
-</segment>
-<segment>
-<wire x1="113.03" y1="165.1" x2="118.11" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="TXD" gate="G$1" pin="C"/>
-<junction x="118.11" y="165.1"/>
-</segment>
-<segment>
-<wire x1="113.03" y1="175.26" x2="118.11" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="RXD" gate="G$1" pin="C"/>
-<junction x="118.11" y="175.26"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@4"/>
@@ -2204,50 +2180,26 @@ Standard decoupling cap</description>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="P1_6"/>
-<wire x1="161.29" y1="161.29" x2="156.21" y2="161.29" width="0.1524" layer="91"/>
-<label x="156.21" y="161.29" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="DIN"/>
 <wire x1="96.52" y1="148.59" x2="91.44" y2="148.59" width="0.1524" layer="91"/>
 <label x="91.44" y="148.59" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="165.1" x2="86.36" y2="165.1" width="0.1524" layer="91"/>
-<label x="86.36" y="165.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX" class="0">
-<segment>
 <pinref part="U1" gate="G$1" pin="P1_7"/>
 <wire x1="161.29" y1="158.75" x2="156.21" y2="158.75" width="0.1524" layer="91"/>
 <label x="156.21" y="158.75" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="RX" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DOUT"/>
 <wire x1="96.52" y1="151.13" x2="91.44" y2="151.13" width="0.1524" layer="91"/>
 <label x="91.44" y="151.13" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="175.26" x2="86.36" y2="175.26" width="0.1524" layer="91"/>
-<label x="86.36" y="175.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="165.1" x2="105.41" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="TXD" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="175.26" x2="105.41" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="RXD" gate="G$1" pin="A"/>
+<pinref part="U1" gate="G$1" pin="P1_6"/>
+<wire x1="161.29" y1="161.29" x2="156.21" y2="161.29" width="0.1524" layer="91"/>
+<label x="156.21" y="161.29" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
