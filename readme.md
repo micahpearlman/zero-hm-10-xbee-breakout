@@ -18,7 +18,7 @@ Creative Commons Share and Share Alike
 
 ## References ##
 
-[Data Sheet](https://github.com/micahpearlman/zero-hm-10-xbee-breakout/blob/master/zero-hm-10-breakout/docs/hm-10-datasheet.pdf)
+[Data Sheet](https://github.com/micahpearlman/zero-hm-10-xbee-breakout/blob/master/docs/hm-10-datasheet.pdf)
 
 HM-10 purchase: http://www.fasttech.com/product/1292002-ti-cc2540-bluetooth-4-0-ble-2540-transparent
 
@@ -30,4 +30,3 @@ https://github.com/Ladvien/HM-10
 
 https://github.com/SamEA/Bluetooth_Low_Energy
 
-https://github.com/michaelkroll/BLEbee <-- BlueGiga
