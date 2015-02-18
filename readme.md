@@ -12,6 +12,8 @@ Creative Commons Share and Share Alike
 
 ## Parts ##
 
+[Order a complete board on Tindie](https://www.tindie.com/products/micahpearlman/zero-xbee-ble/)
+
 [Parts List](https://raw2.github.com/micahpearlman/zero-hm-10-xbee-breakout/master/parts-list.txt)
 
 [Order PCB from Osh Park](https://oshpark.com/shared_projects/l8zO7AMg)
